@@ -45,5 +45,13 @@ public class ContentServiceImpl implements ContentService{
 		contentMapper.insert(content);
 		return E3Result.ok();
 	}
+	@Override
+	public List<TbContent> getContentListByCid(long categoryId) {
+		TbContentExample example = new TbContentExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andCategoryIdEqualTo(categoryId);
+		List<TbContent> list = contentMapper.selectByExample(example);
+		return list;
+	}
 
 }
