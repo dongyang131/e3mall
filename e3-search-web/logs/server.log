@@ -673,3 +673,873 @@ Session establishment complete on server 192.168.25.128/192.168.25.128:2181, ses
 
 [INFO ] 2017-08-14 22:27:19,121 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
 zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-08-16 00:39:44,352 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-portal-web': initialization started
+
+
+[INFO ] 2017-08-16 00:39:44,379 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 00:39:44 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 00:39:44,408 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-08-16 00:39:44,619 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-08-16 00:39:44,719 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2017-08-16 00:39:44,725 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-08-16 00:39:45,066 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.e3mall.content.service.ContentService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8136&side=provider&timeout=300000&timestamp=1502815093291 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-portal-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815166080 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-portal-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815166080, cn.e3mall.search.service.SearchItemService=dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=2944&side=provider&timeout=300000&timestamp=1502815114599 empty://192.168.179.1/cn.e3mall.search.service.SearchItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135689 empty://192.168.179.1/cn.e3mall.search.service.SearchItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135689, cn.e3mall.service.ItemService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=5148&side=provider&timeout=300000&timestamp=1502815071798 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135622 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135622, cn.e3mall.service.ItemCatService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=5148&side=provider&timeout=300000&timestamp=1502815072609 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572, cn.e3mall.content.service.ContentCatService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentCatService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8136&side=provider&timeout=300000&timestamp=1502815092703 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017, cn.e3mall.search.service.SearchService=empty://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=2944&side=provider&timeout=300000&timestamp=1502815115190}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-08-16 00:39:45,143 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-08-16 00:39:45,159 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-08-16 00:39:45,160 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-DD-dd
+
+
+[INFO ] 2017-08-16 00:39:45,160 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_72
+
+
+[INFO ] 2017-08-16 00:39:45,160 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-08-16 00:39:45,161 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\develop\Java\jdk1.7.0_72\jre
+
+
+[INFO ] 2017-08-16 00:39:45,161 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-08-16 00:39:45,161 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\develop\Java\jdk1.7.0_72\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin/server;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin;D:/develop/Java/jdk1.7.0_72/bin/../jre/lib/amd64;D:\develop\Java\jdk1.7.0_72\bin;D:\apache-maven-3.3.9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\MySQL\MySQL Server 5.5\bin;E:\mysql\azlj\bin;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;d:\Program Files (x86)\Windows7Master;D:\Program Files (x86)\Windows7Master;d:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;d:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;D:\develop\eclipse;;.
+
+
+[INFO ] 2017-08-16 00:39:45,162 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-08-16 00:39:45,163 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-08-16 00:39:45,164 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-08-16 00:39:45,164 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-08-16 00:39:45,164 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-08-16 00:39:45,165 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2017-08-16 00:39:45,165 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-08-16 00:39:45,165 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace\e3-search-web
+
+
+[INFO ] 2017-08-16 00:39:45,166 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@19a53ce6
+
+
+[INFO ] 2017-08-16 00:39:45,191 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-08-16 00:39:45,210 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2017-08-16 00:39:45,316 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x15da55ce1b4009f, negotiated timeout = 30000
+
+
+[INFO ] 2017-08-16 00:39:45,318 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-08-16 00:39:45,361 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815184981, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 00:39:45,427 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815184981, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 00:39:45,465 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815184981, urls: [dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=2944&side=provider&timeout=300000&timestamp=1502815115190, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815184981, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815184981], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 00:39:45,646 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.179.1:20882 from NettyClient 192.168.179.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x46c24779, /192.168.179.1:11178 => /192.168.179.1:20882]], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 00:39:45,647 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient PC-DD-dd/192.168.179.1 connect to the server /192.168.179.1:20882, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 00:39:45,738 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.search.service.SearchService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-search-web&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502815184981, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 00:39:45,896 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.e3mall.search.controller.SearchController.search(java.lang.String,int,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2017-08-16 00:39:46,193 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 00:39:44 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 00:39:46,255 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 00:39:44 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 00:39:46,431 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-portal-web': initialization completed in 2069 ms
+
+
+[WARN ] 2017-08-16 00:43:38,657 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'e3-portal-web'
+
+
+[WARN ] 2017-08-16 00:44:10,015 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@38a5216c}, dubbo version: 2.5.3, current host: 192.168.179.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@38a5216c}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2017-08-16 00:44:11,035 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@442dfc6e}, dubbo version: 2.5.3, current host: 192.168.179.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@442dfc6e}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2017-08-16 00:44:12,050 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@16bb3461}, dubbo version: 2.5.3, current host: 192.168.179.1
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@16bb3461}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[ERROR] 2017-08-16 00:44:12,056 method:cn.e3mall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:17)
+系统发生异常
+com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method search in the service cn.e3mall.search.service.SearchService. Tried 3 times of the providers [192.168.179.1:20882] (1/1) from the registry 192.168.25.128:2181 on the consumer 192.168.179.1 using the dubbo version 2.5.3. Last error is: Failed to invoke remote method: search, provider: dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502815184981, cause: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@16bb3461}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@16bb3461}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:101)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.search(proxy0.java)
+	at cn.e3mall.search.controller.SearchController.search(SearchController.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@16bb3461}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, detailMessage=Server refused connection at: http://192.168.25.155:8080/solr/collection1, suppressedExceptions=[], stackTrace=[Ljava.lang.StackTraceElement;@16bb3461}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:190)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	... 45 more
+
+
+[INFO ] 2017-08-16 01:03:16,345 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.179.1:20882,url:dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502815184981, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[WARN ] 2017-08-16 01:03:19,268 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.179.1:20882 find error . url: dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502815184981, dubbo version: 2.5.3, current host: 192.168.179.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6568&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502815184981) failed to connect to server /192.168.179.1:20882, error message is:Connection refused: no further information: /192.168.179.1:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.179.1:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+
+
+[INFO ] 2017-08-16 01:03:53,122 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-portal-web': initialization started
+
+
+[INFO ] 2017-08-16 01:03:53,142 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 01:03:53 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 01:03:53,169 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-08-16 01:03:53,380 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-08-16 01:03:53,479 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2017-08-16 01:03:53,484 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-08-16 01:03:53,828 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.e3mall.content.service.ContentService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8136&side=provider&timeout=300000&timestamp=1502815093291 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-portal-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815166080 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-portal-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8252&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815166080, cn.e3mall.search.service.SearchItemService=empty://192.168.179.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=6076&side=provider&timeout=300000&timestamp=1502816624331, cn.e3mall.service.ItemService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=5148&side=provider&timeout=300000&timestamp=1502815071798 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135622 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135622, cn.e3mall.content.service.ContentCatService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentCatService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8136&side=provider&timeout=300000&timestamp=1502815092703 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017, cn.e3mall.service.ItemCatService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=5148&side=provider&timeout=300000&timestamp=1502815072609 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572, cn.e3mall.search.service.SearchService=empty://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6076&side=provider&timeout=300000&timestamp=1502816624954}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-08-16 01:03:53,840 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-08-16 01:03:53,854 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-08-16 01:03:53,855 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-DD-dd
+
+
+[INFO ] 2017-08-16 01:03:53,855 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_72
+
+
+[INFO ] 2017-08-16 01:03:53,856 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-08-16 01:03:53,856 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\develop\Java\jdk1.7.0_72\jre
+
+
+[INFO ] 2017-08-16 01:03:53,856 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-08-16 01:03:53,857 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\develop\Java\jdk1.7.0_72\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin/server;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin;D:/develop/Java/jdk1.7.0_72/bin/../jre/lib/amd64;D:\develop\Java\jdk1.7.0_72\bin;D:\apache-maven-3.3.9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\MySQL\MySQL Server 5.5\bin;E:\mysql\azlj\bin;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;d:\Program Files (x86)\Windows7Master;D:\Program Files (x86)\Windows7Master;d:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;d:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;D:\develop\eclipse;;.
+
+
+[INFO ] 2017-08-16 01:03:53,857 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-08-16 01:03:53,857 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-08-16 01:03:53,858 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-08-16 01:03:53,859 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-08-16 01:03:53,859 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-08-16 01:03:53,859 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2017-08-16 01:03:53,859 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-08-16 01:03:53,860 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace\e3-search-web
+
+
+[INFO ] 2017-08-16 01:03:53,861 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3cb2ff35
+
+
+[INFO ] 2017-08-16 01:03:53,883 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-08-16 01:03:53,884 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2017-08-16 01:03:53,980 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x15da55ce1b400a1, negotiated timeout = 30000
+
+
+[INFO ] 2017-08-16 01:03:53,981 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-08-16 01:03:54,021 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816633745, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:03:54,097 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816633745, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:03:54,139 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816633745, urls: [dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6076&side=provider&timeout=300000&timestamp=1502816624954, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816633745, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816633745], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:03:54,331 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.179.1:20882 from NettyClient 192.168.179.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xceae8347, /192.168.179.1:12058 => /192.168.179.1:20882]], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:03:54,332 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient PC-DD-dd/192.168.179.1 connect to the server /192.168.179.1:20882, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:03:54,475 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.search.service.SearchService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-search-web&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502816633745, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:03:54,625 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.e3mall.search.controller.SearchController.search(java.lang.String,int,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2017-08-16 01:03:54,946 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 01:03:53 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 01:03:55,011 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 01:03:53 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 01:03:55,199 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-portal-web': initialization completed in 2074 ms
+
+
+[INFO ] 2017-08-16 01:08:08,024 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.179.1:20882,url:dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502816633745, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[WARN ] 2017-08-16 01:08:09,412 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.179.1:20882 find error . url: dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502816633745, dubbo version: 2.5.3, current host: 192.168.179.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9904&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502816633745) failed to connect to server /192.168.179.1:20882, error message is:Connection refused: no further information: /192.168.179.1:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.179.1:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:739)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2017-08-16 01:08:39,133 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-portal-web': initialization started
+
+
+[INFO ] 2017-08-16 01:08:39,152 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 01:08:39 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 01:08:39,181 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-08-16 01:08:39,395 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-08-16 01:08:39,492 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2017-08-16 01:08:39,496 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-08-16 01:08:39,742 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.e3mall.content.service.ContentService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8136&side=provider&timeout=300000&timestamp=1502815093291 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135528 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135528, cn.e3mall.search.service.SearchItemService=dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=1880&side=provider&timeout=300000&timestamp=1502816910012 empty://192.168.179.1/cn.e3mall.search.service.SearchItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135689 empty://192.168.179.1/cn.e3mall.search.service.SearchItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135689, cn.e3mall.service.ItemService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=5148&side=provider&timeout=300000&timestamp=1502815071798 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135622 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,addItem,getItemById&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135622, cn.e3mall.service.ItemCatService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=5148&side=provider&timeout=300000&timestamp=1502815072609 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572, cn.e3mall.content.service.ContentCatService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentCatService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8136&side=provider&timeout=300000&timestamp=1502815092703 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017, cn.e3mall.search.service.SearchService=empty://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=2944&side=provider&timeout=300000&timestamp=1502815115190}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-08-16 01:08:39,754 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-08-16 01:08:39,766 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-08-16 01:08:39,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-DD-dd
+
+
+[INFO ] 2017-08-16 01:08:39,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_72
+
+
+[INFO ] 2017-08-16 01:08:39,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-08-16 01:08:39,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\develop\Java\jdk1.7.0_72\jre
+
+
+[INFO ] 2017-08-16 01:08:39,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-08-16 01:08:39,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\develop\Java\jdk1.7.0_72\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin/server;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin;D:/develop/Java/jdk1.7.0_72/bin/../jre/lib/amd64;D:\develop\Java\jdk1.7.0_72\bin;D:\apache-maven-3.3.9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\MySQL\MySQL Server 5.5\bin;E:\mysql\azlj\bin;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;d:\Program Files (x86)\Windows7Master;D:\Program Files (x86)\Windows7Master;d:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;d:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;D:\develop\eclipse;;.
+
+
+[INFO ] 2017-08-16 01:08:39,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-08-16 01:08:39,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-08-16 01:08:39,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-08-16 01:08:39,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-08-16 01:08:39,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-08-16 01:08:39,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2017-08-16 01:08:39,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-08-16 01:08:39,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace\e3-search-web
+
+
+[INFO ] 2017-08-16 01:08:39,770 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@60e993a0
+
+
+[INFO ] 2017-08-16 01:08:39,791 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-08-16 01:08:39,885 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2017-08-16 01:08:39,913 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x15da55ce1b400a3, negotiated timeout = 30000
+
+
+[INFO ] 2017-08-16 01:08:39,915 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-08-16 01:08:39,934 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816919684, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:08:39,999 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816919684, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:08:40,058 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816919684, urls: [dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=1880&side=provider&timeout=300000&timestamp=1502816910488, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816919684, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502816919684], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:08:40,194 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.179.1:20882 from NettyClient 192.168.179.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xcddcab8a, /192.168.179.1:12104 => /192.168.179.1:20882]], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:08:40,194 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient PC-DD-dd/192.168.179.1 connect to the server /192.168.179.1:20882, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:08:40,284 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.search.service.SearchService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-search-web&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=9920&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502816919684, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 01:08:40,395 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.e3mall.search.controller.SearchController.search(java.lang.String,int,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2017-08-16 01:08:40,629 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 01:08:39 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 01:08:40,670 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 01:08:39 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 01:08:40,775 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-portal-web': initialization completed in 1639 ms
+
+
+[INFO ] 2017-08-16 02:55:01,049 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'e3-portal-web': initialization started
+
+
+[INFO ] 2017-08-16 02:55:01,065 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 02:55:01 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 02:55:01,093 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2017-08-16 02:55:01,300 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-08-16 02:55:01,395 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2017-08-16 02:55:01,399 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-08-16 02:55:01,740 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.e3mall.content.service.ContentService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8136&side=provider&timeout=300000&timestamp=1502815093291 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135528 empty://192.168.179.1/cn.e3mall.content.service.ContentService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentService&methods=getContentList,addContent,getContentListByCid&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135528, cn.e3mall.search.service.SearchItemService=dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchItemService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=1880&side=provider&timeout=300000&timestamp=1502816910012 empty://192.168.179.1/cn.e3mall.search.service.SearchItemService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135689 empty://192.168.179.1/cn.e3mall.search.service.SearchItemService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchItemService&methods=importIndex&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135689, cn.e3mall.service.ItemService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,getTbItemDescById,addItem,getItemById&pid=10088&side=provider&timeout=300000&timestamp=1502822807373 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-item-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,getTbItemDescById,addItem,getItemById&pid=9540&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823237535 empty://192.168.179.1/cn.e3mall.service.ItemService?application=e3-item-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemService&methods=getItemList,getTbItemDescById,addItem,getItemById&pid=9540&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823237535, cn.e3mall.content.service.ContentCatService=dubbo://192.168.179.1:20881/cn.e3mall.content.service.ContentCatService?anyhost=true&application=e3-content&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8136&side=provider&timeout=300000&timestamp=1502815092703 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017 empty://192.168.179.1/cn.e3mall.content.service.ContentCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.content.service.ContentCatService&methods=getContentCatList,addContentCategory&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135017, cn.e3mall.service.ItemCatService=dubbo://192.168.179.1:20880/cn.e3mall.service.ItemCatService?anyhost=true&application=e3-manager&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=10088&side=provider&timeout=300000&timestamp=1502822807919 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572 empty://192.168.179.1/cn.e3mall.service.ItemCatService?application=e3-manager-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.service.ItemCatService&methods=getItemCatList&pid=8392&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502815135572, cn.e3mall.search.service.SearchService=empty://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=2944&side=provider&timeout=300000&timestamp=1502815115190}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-08-16 02:55:01,753 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-08-16 02:55:01,766 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-08-16 02:55:01,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=PC-DD-dd
+
+
+[INFO ] 2017-08-16 02:55:01,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_72
+
+
+[INFO ] 2017-08-16 02:55:01,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-08-16 02:55:01,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\develop\Java\jdk1.7.0_72\jre
+
+
+[INFO ] 2017-08-16 02:55:01,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2017-08-16 02:55:01,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\develop\Java\jdk1.7.0_72\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin/server;D:/develop/Java/jdk1.7.0_72/bin/../jre/bin;D:/develop/Java/jdk1.7.0_72/bin/../jre/lib/amd64;D:\develop\Java\jdk1.7.0_72\bin;D:\apache-maven-3.3.9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\MySQL\MySQL Server 5.5\bin;E:\mysql\azlj\bin;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;d:\Program Files (x86)\Windows7Master;D:\Program Files (x86)\Windows7Master;d:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;d:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;D:\develop\eclipse;;.
+
+
+[INFO ] 2017-08-16 02:55:01,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-08-16 02:55:01,770 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-08-16 02:55:01,771 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-08-16 02:55:01,771 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-08-16 02:55:01,771 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-08-16 02:55:01,772 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2017-08-16 02:55:01,772 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-08-16 02:55:01,772 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\workspace\e3-search-web
+
+
+[INFO ] 2017-08-16 02:55:01,773 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@49a5cdc4
+
+
+[INFO ] 2017-08-16 02:55:01,795 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-08-16 02:55:01,797 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2017-08-16 02:55:01,973 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x15da55ce1b400a7, negotiated timeout = 30000
+
+
+[INFO ] 2017-08-16 02:55:01,975 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-08-16 02:55:02,014 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6956&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823301656, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 02:55:02,035 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6956&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823301656, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 02:55:02,075 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6956&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823301656, urls: [dubbo://192.168.179.1:20882/cn.e3mall.search.service.SearchService?anyhost=true&application=e3-search&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=1880&side=provider&timeout=300000&timestamp=1502816910488, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=configurators&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6956&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823301656, empty://192.168.179.1/cn.e3mall.search.service.SearchService?application=e3-search-web&category=routers&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6956&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1502823301656], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 02:55:02,254 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.179.1:20882 from NettyClient 192.168.179.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xccfdf8f8, /192.168.179.1:13726 => /192.168.179.1:20882]], dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 02:55:02,254 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient PC-DD-dd/192.168.179.1 connect to the server /192.168.179.1:20882, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 02:55:02,403 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.e3mall.search.service.SearchService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=e3-search-web&check=false&dubbo=2.5.3&interface=cn.e3mall.search.service.SearchService&methods=search&pid=6956&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1502823301656, dubbo version: 2.5.3, current host: 192.168.179.1
+
+
+[INFO ] 2017-08-16 02:55:02,548 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.e3mall.search.controller.SearchController.search(java.lang.String,int,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2017-08-16 02:55:02,861 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 02:55:01 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 02:55:02,924 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'e3-portal-web-servlet': startup date [Wed Aug 16 02:55:01 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-08-16 02:55:03,106 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'e3-portal-web': initialization completed in 2055 ms
+
+
+[WARN ] 2017-08-16 02:55:15,836 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
+No mapping found for HTTP request with URI [/html/web/_public/_ajaxStaticMenu.html] in DispatcherServlet with name 'e3-portal-web'
