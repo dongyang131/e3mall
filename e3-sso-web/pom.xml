@@ -5,12 +5,14 @@
     <artifactId>e3-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>e3-item-web</artifactId>
+  <groupId>cn.e3mall</groupId>
+  <artifactId>e3-sso-web</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
 		<dependency>
 			<groupId>cn.e3mall</groupId>
-			<artifactId>e3-manager-interface</artifactId>
+			<artifactId>e3-sso-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<!-- Spring -->
@@ -90,10 +92,6 @@
 			<groupId>com.github.sgroschupf</groupId>
 			<artifactId>zkclient</artifactId>
 		</dependency>
-		<dependency>
-				<groupId>org.freemarker</groupId>
-				<artifactId>freemarker</artifactId>
-			</dependency>
 				<!-- acitvemq客户端的jar包 -->
 			<dependency>
 				<groupId>org.apache.activemq</groupId>
@@ -108,7 +106,7 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
 					<path>/</path>
-					<port>8089</port>
+					<port>8090</port>
 				</configuration>
 			</plugin>
 		</plugins>
